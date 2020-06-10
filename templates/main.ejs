@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<%- include ./common/head.ejs %>
+<body>
+<div class="holder flex col">
+    <main class="flex">
+        <div class="login-form">
+        <% if (userProfile) { %>
+            <% const userName = userProfile.firstName ?
+                    `${userProfile.firstName} ${userProfile.lastName}` : userProfile.email %>
+            <h1>Welcome, dear <%=userName%>!</h1>
+            <a class="button" href="/profile">My profile</a>
+            <a class="button" href="/logout">Log out</a>
+        <% } else { %>
+            <h1>Please Log In!</h1>
+            <a class="button" href="/registration/google">Google</a>
+            <a class="button" href="/registration/facebook">Facebook</a>
+            <a class="button" href="/registration/vkontakte">VKontakte</a>
+        <% } %>
+        </div>
+    </main>
+    <%- include ./common/footer.ejs %>
+</div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{
+  "name": "passport-demo-blondiecode",
+  "version": "1.0.0",
+  "description": "Passport authentification Express.js architecture",
+  "main": "app.js",
+  "author": "Aida Drogan #BlondieCode",
+  "scripts": {
+    "dev": "NODE_ENV=development node app.js",
+    "pro": "NODE_ENV=production node app.js"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.18",
+    "passport": "^0.4.1",
+    "passport-facebook": "^3.0.0",
+    "passport-google": "^0.3.0",
+    "passport-vkontakte": "^0.3.2"
+  }
+}

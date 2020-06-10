@@ -1,0 +1,81 @@
+html, body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: Arial, "Helvetica Neue", Helvetica, serif;
+    background-color: #89a1b4;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23ffffff' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+div {
+    box-sizing: border-box;
+}
+main {
+    flex-grow: 1;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    flex-grow: 0;
+}
+a {
+    color: #00706f;
+}
+a:hover {
+    color: #00a2a1;
+}
+a.button {
+    background: #00706f;
+    color: #ffffff;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    margin: 10px;
+}
+a.button:hover {
+    background: #00a2a1;
+    color: #ffffff;
+}
+h1 {
+    font-size: 26px;
+    margin: 20px auto 40px;
+}
+h2 {
+    font-size: 22px;
+    margin: 40px auto;
+}
+.flex {
+    display: flex;
+}
+.flex.centered {
+    justify-content: center;
+}
+.flex.row {
+    flex-direction: row;
+}
+.flex.col {
+    flex-direction: column;
+}
+.holder {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: rgba(255,255,255,.75);
+    height: 100vh;
+    flex: 1;
+}
+.login-form {
+    margin: auto;
+}
+.login-form img {
+    max-width: 100px;
+    border-radius: 50%;
+}

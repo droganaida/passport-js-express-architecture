@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<%- include ./common/head.ejs %>
+<body>
+<div class="holder flex col">
+    <main class="flex">
+        <div class="login-form">
+            <h1>Profile</h1>
+            <img src="<%=userProfile.avatar%>">
+            <p>Logged in with <b><%=userProfile.provider%></b></p>
+            <p>Your email: <%=userProfile.email%></p>
+            <a class="button" href="/">Home</a>
+        </div>
+    </main>
+    <%- include ./common/footer.ejs %>
+</div>
+</body>
+</html>
